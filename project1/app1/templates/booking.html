@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- <h1>This is My Booking page</h1> -->
+<h1>Create todo</hi>
+<div class="row">
+    <div class="col;st-6 offset-3">
+        <form action=""method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" name="title" id="title1" class="form-control">
+            </div>
+        
+            <div class="form-group">
+                <label for="">Description</label>
+                <textarea name="des" id="des" cols="30" rows="10" class="form-control"></textarea>
+            </div>
+        
+            <div class="form-group">
+                <label>Rating</Label>
+                <input type="number" name="rating" Id="rating" class="Form-control">
+            </div>
+        
+            <div class="form-group">
+                <label for=""></label>Status</label>
+                <input type="checkbox" name="status" id="status">
+            </div>
+        
+            <div class="form-group" >
+                <button class="btn btn-primary">Save</button>
+            </div>
+        </form>
+{% endblock %}

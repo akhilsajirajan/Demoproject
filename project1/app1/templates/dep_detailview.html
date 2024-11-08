@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 style="text-align: center;">This is My Department page</h1>
+<hr>
+
+<div style="text-align: center; margin-left: 200px; height: 120px; width: 70%; background-color: aqua;">
+    <h1 style="color:black; padding-top: 20px;">{{ dept.deptname }}</h1>
+    <p style="color: black; padding-top: 10px;">{{ dept.description }}</p>
+</div><br>
+
+{% endblock %}

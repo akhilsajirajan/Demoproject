@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- <h1>This is My Contact page</h1> -->
+<h1>Create todo</hi>
+    <div class="row">
+        <div class="col;st-6 offset-3">
+            <form action=""method="post">
+                {% csrf_token %}
+    
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" name="title" id="title1" class="form-control">
+                </div>
+            
+                <div class="form-group">
+                    <label for="">Phonenumber</label>
+                    <input type="tel" name="Phonenumber" id="Phonenumber" class="form-control">
+                </div>
+            
+                <div class="form-group" >
+                    <button class="btn btn-primary">Save</button>
+                </div>
+            </form>
+{% endblock %}

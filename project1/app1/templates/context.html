@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        {{ name }}<br>
+        {{age}}<br>
+        {{Address}}<br>
+        {{products}}<br>
+        {% for i in products %}
+            <li>{{i}}</li>
+        {% endfor %}
+        {% if gender == 0 %}
+            <h1>Male</h1>
+
+        {% elif gender == 1 %}
+            <h1>Female</h1>
+        {% else %}
+            <h1>others</h1>
+
+        {% endif %}
+    </h1>
+</body>
+</html>

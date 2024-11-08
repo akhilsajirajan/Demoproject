@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block tile %}
+booking
+{% endblock %}
+
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+        {{ form.p }}
+        <p>Are you sure to delete the file</p>
+        <div>
+            <button type="submit">SAVE</button>
+        </div>
+
+    </table>
+
+</form>
+{% endblock %}
